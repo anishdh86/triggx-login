@@ -1,0 +1,27 @@
+@import "../../../assets/scss/variables";
+
+.form-list {
+  display: flex;
+  flex-flow: column;
+
+  dt {
+    margin-bottom: 0.375rem;
+
+    label {
+      color: $formLabel;
+      text-transform: uppercase;
+    }
+  }
+  dd {
+    margin-bottom: 0.938rem;
+    display: flex;
+
+    > input {
+      flex: 1;
+      background-color: #f5f5f5;
+      border-color: transparent;
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
+  }
+}

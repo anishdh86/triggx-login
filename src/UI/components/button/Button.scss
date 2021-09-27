@@ -1,0 +1,23 @@
+@import "../../../assets/scss/variables.scss";
+
+.btn {
+  width: 100%;
+  border: none;
+  padding: 0.938rem;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &--secondary {
+    color: $salmon300;
+    background-color: white;
+  }
+  &--primary {
+    color: white;
+    background-color: $salmon400;
+  }
+  &:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+}

@@ -1,0 +1,25 @@
+@import "assets/scss/variables.scss";
+
+.App {
+  max-width: 25rem;
+  padding: 0 0.625em;
+  margin: 0 auto;
+  height: 100vh;
+  border-left: 2px solid $salmon300;
+  border-right: 2px solid $salmon300;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    min-height: 500px;
+    display: block;
+    background-color: $salmon300;
+    z-index: -1;
+    border-radius: 50%;
+    top: -25%;
+    left: -20%;
+  }
+}
